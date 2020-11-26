@@ -203,6 +203,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1323440813, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
+      propertyPath: textScore
+      value: 
+      objectReference: {fileID: 1689826279}
+    - target: {fileID: 1323440813, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
+      propertyPath: deathMenu
+      value: 
+      objectReference: {fileID: 975646270}
+    - target: {fileID: 1323440813, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
+      propertyPath: deathScore
+      value: 
+      objectReference: {fileID: 975646271}
+    - target: {fileID: 1323440813, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
+      propertyPath: HUDRef
+      value: 
+      objectReference: {fileID: 1689826282}
+    - target: {fileID: 1323440813, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
+      propertyPath: textHealth
+      value: 
+      objectReference: {fileID: 229227823}
     - target: {fileID: 933808985205036009, guid: 5f41dd0989dce944b9d767def60de91b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -258,33 +278,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3514985794631761466, guid: 5f41dd0989dce944b9d767def60de91b,
-        type: 3}
-      propertyPath: jumpForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3514985794631761466, guid: 5f41dd0989dce944b9d767def60de91b,
-        type: 3}
-      propertyPath: maxGravity
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3514985794631761466, guid: 5f41dd0989dce944b9d767def60de91b,
-        type: 3}
-      propertyPath: textScore
-      value: 
-      objectReference: {fileID: 1689826279}
-    - target: {fileID: 3968981659247901510, guid: 5f41dd0989dce944b9d767def60de91b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4330902177342827126, guid: 5f41dd0989dce944b9d767def60de91b,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3514985794631761466, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f41dd0989dce944b9d767def60de91b, type: 3}
 --- !u!1001 &177908562
 PrefabInstance:
@@ -1434,38 +1433,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1205342599}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1323440812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4330902177342827126, guid: 5f41dd0989dce944b9d767def60de91b,
-    type: 3}
-  m_PrefabInstance: {fileID: 120666680}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1323440813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323440812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e846f21607dae848a4d4af05dc1d460, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 4.5
-  xConstraints: {x: -8.5, y: 8.5}
-  yConstraints: {x: -4.5, y: 4.5}
-  maxGravity: -10
-  dead: 0
-  textScore: {fileID: 1689826279}
-  deathMenu: {fileID: 975646270}
-  deathScore: {fileID: 975646271}
-  HUDRef: {fileID: 1689826282}
-  initialAbilityCooldown: 1
-  health: 20
-  healthLoss: 10
-  textHealth: {fileID: 229227823}
-  maxHealth: 20
 --- !u!1001 &1452372640
 PrefabInstance:
   m_ObjectHideFlags: 0

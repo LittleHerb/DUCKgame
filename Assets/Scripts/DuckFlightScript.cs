@@ -36,7 +36,7 @@ public class DuckFlightScript : MonoBehaviour
         {
             Vector3 moveVector = Vector3.zero;
             //Up-down movement
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) || Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 GetComponent<Rigidbody>().velocity = new Vector3(0, jumpForce, 0);
                 if (!activated)

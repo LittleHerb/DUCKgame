@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 933808985205036009}
   - component: {fileID: 9000360043587307958}
-  - component: {fileID: 3514985794631761466}
   - component: {fileID: 7413006716590105592}
   - component: {fileID: 7974567974726035134}
+  - component: {fileID: 1323440813}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -85,24 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3514985794631761466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4330902177342827126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 197d64f7383309a47bb2a628c5420a98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 1
-  xConstraints: {x: -8.5, y: 8.5}
-  yConstraints: {x: -4.5, y: 4.5}
-  maxGravity: 0
-  dead: 0
-  textScore: {fileID: 0}
 --- !u!54 &7413006716590105592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,3 +114,29 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1323440813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4330902177342827126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e846f21607dae848a4d4af05dc1d460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 4.5
+  xConstraints: {x: -8.5, y: 8.5}
+  yConstraints: {x: -4.5, y: 4.5}
+  maxGravity: -10
+  dead: 0
+  textScore: {fileID: 0}
+  deathMenu: {fileID: 0}
+  deathScore: {fileID: 0}
+  HUDRef: {fileID: 0}
+  initialAbilityCooldown: 1
+  health: 20
+  healthLoss: 10
+  textHealth: {fileID: 0}
+  maxHealth: 20
